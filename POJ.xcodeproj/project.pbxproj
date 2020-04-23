@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18CAE98E23B0E0F800C7F9BF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18CAE98D23B0E0F800C7F9BF /* main.cpp */; };
+		18F26C3523B494EB004C2E7A /* 1062_Dijkstra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F26C3423B494EB004C2E7A /* 1062_Dijkstra.cpp */; };
+		18F26C3723B49EC3004C2E7A /* 1062_SPFA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18F26C3623B49EC3004C2E7A /* 1062_SPFA.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +24,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		184C62B323B373CF006CFC5A /* 1860_Bellman_Ford.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1860_Bellman_Ford.cpp; sourceTree = "<group>"; };
+		18A9C25A23B0E7BE00A43B42 /* input */ = {isa = PBXFileReference; lastKnownFileType = text; path = input; sourceTree = "<group>"; };
 		18CAE98A23B0E0F800C7F9BF /* POJ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = POJ; sourceTree = BUILT_PRODUCTS_DIR; };
-		18CAE98D23B0E0F800C7F9BF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		18F26C3223B45351004C2E7A /* 3259_Bellman_Ford.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 3259_Bellman_Ford.cpp; sourceTree = "<group>"; };
+		18F26C3423B494EB004C2E7A /* 1062_Dijkstra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1062_Dijkstra.cpp; sourceTree = "<group>"; };
+		18F26C3623B49EC3004C2E7A /* 1062_SPFA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 1062_SPFA.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18A9C25923B0E79B00A43B42 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				18A9C25A23B0E7BE00A43B42 /* input */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
 		18CAE98123B0E0F800C7F9BF = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +70,11 @@
 		18CAE98C23B0E0F800C7F9BF /* POJ */ = {
 			isa = PBXGroup;
 			children = (
-				18CAE98D23B0E0F800C7F9BF /* main.cpp */,
+				18A9C25923B0E79B00A43B42 /* Inputs */,
+				18F26C3423B494EB004C2E7A /* 1062_Dijkstra.cpp */,
+				18F26C3623B49EC3004C2E7A /* 1062_SPFA.cpp */,
+				184C62B323B373CF006CFC5A /* 1860_Bellman_Ford.cpp */,
+				18F26C3223B45351004C2E7A /* 3259_Bellman_Ford.cpp */,
 			);
 			path = POJ;
 			sourceTree = "<group>";
@@ -119,7 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18CAE98E23B0E0F800C7F9BF /* main.cpp in Sources */,
+				18F26C3723B49EC3004C2E7A /* 1062_SPFA.cpp in Sources */,
+				18F26C3523B494EB004C2E7A /* 1062_Dijkstra.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +187,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"OJ=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
